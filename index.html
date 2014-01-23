@@ -39,6 +39,16 @@
       overflow: hidden;
     }
 
+    #caracteristicas {
+      color: #FFF;
+      background-color: #E54B4B;
+    }
+
+    section {
+      padding-top: 3em;
+      padding-bottom: 3em;
+    }
+
     /*.menu.principal {
       margin-bottom: 0;
     }*/
@@ -67,7 +77,7 @@
         <div class="ui header">
           <h1>Semantic UI</h1>
         </div>
-        <div class="ui two column grid">
+        <div class="two column stackable ui grid">
           <div class="column">
             <div class="ui icon message">
               <i class="legal icon"></i>
@@ -98,7 +108,127 @@
   </section>
 
   <section id="caracteristicas">
-    
+    <div class="ui page grid">
+
+      <div class="column">
+        <h2 class="ui header row"><i class="list icon"></i>Características principales</h2>
+         <div class="ui stackable items">
+
+          <div class="item">
+            <div class="image">
+              <img src="img/responsive-design-p.jpg">
+              <a class="like ui corner label">
+                <i class="like icon"></i>
+              </a>
+            </div>
+            <div class="content">
+              <div class="name">Diseño adaptable</div>
+              <p class="description">
+                Diseñado completamente con <code>em</code> y </code>rem</code>.
+              </p>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="image">
+              <img src="img/cat.jpg">
+              <a class="like ui corner label">
+                <i class="like icon"></i>
+              </a>
+            </div>
+            <div class="content">
+              <div class="name">Auto explicativo</div>
+              <p class="description">Uso de lenguaje simple y común.</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="image">
+              <img src="img/html-tags.jpg">
+              <a class="like ui corner label">
+                <i class="like icon"></i>
+              </a>
+            </div>
+            <div class="content">
+              <div class="name">Indiferente a etiquetas</div>
+              <p class="description">Se puede usar cualquier etiqueta con los elementos UI.</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="image">
+              <img src="img/reuso.jpg">
+              <a class="like ui corner label">
+                <i class="like icon"></i>
+              </a>
+            </div>
+            <div class="content">
+              <div class="name">Fuerte enfoque al uso de patrones y la reusabilidad</div>
+              <p class="description">Las definiciones de elementos pueden ser expresadas en grupos y tienen atributos compartidos evitando declaraciones repetitivas.
+              </p>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="image">
+              <img src="img/freedom.jpg">
+              <a class="like ui corner label">
+                <i class="like icon"></i>
+              </a>
+            </div>
+            <div class="content">
+              <div class="name">Portable e independiente</div>
+              <p class="description">Usa sólo los componentes que necesites.
+              </p>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="image">
+              <img src="img/javascript.png">
+              <a class="like ui corner label">
+                <i class="like icon"></i>
+              </a>
+            </div>
+            <div class="content">
+              <div class="name">Javascript</div>
+              <p class="description">Incluye componentes javascript, librería de animaciones y validación de formularios.
+              </p>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="image">
+              <img src="img/sass-less.jpg">
+              <a class="like ui corner label">
+                <i class="like icon"></i>
+              </a>
+            </div>
+            <div class="content">
+              <div class="name">Preprocesadores CSS</div>
+              <p class="description">Usa LESS y tiene un port oficial a SASS.
+              </p>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="image">
+              <img src="img/docs.jpg">
+              <a class="like ui corner label">
+                <i class="like icon"></i>
+              </a>
+            </div>
+            <div class="content">
+              <div class="name">Documentación extensiva</div>
+              <p class="description">Encuéntrala en su sitio: <a href="http://semantic-ui.com">semantic-ui.com</a>
+              </p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
   </section>
 
   <section id="demostracion-componentes">
@@ -109,7 +239,7 @@
         <!-- Estructura de cada ejemplo, repetir por cada ejemplo -->
         <div class="demo ui segment">
           <h3 class="ui dividing header"></i>Button</h3>
-          <div class="ui two column grid">
+          <div class="two column stackable ui grid">
             <div class="codigo column">
               <h4 class="ui header">Código</h4>
               <!-- Aquí va el código
