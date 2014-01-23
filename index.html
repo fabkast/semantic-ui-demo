@@ -381,18 +381,22 @@
       <div class="column">
         <h2 class="ui header"><i class="code icon"></i>Demostración de componentes</h2>
 
-        <!-- Estructura de cada ejemplo, repetir por cada ejemplo -->
         <div class="demo ui segment">
           <h3 class="ui dividing header"></i>Button</h3>
-          <div class="two column stackable ui grid">
+          <div class="ui two column grid">
             <div class="codigo column">
               <h4 class="ui header">Código</h4>
               <!-- Aquí va el código
               "&lt;" == "<"
               "&gt;" == ">"
               -->
-              <pre class="prettyprint linenums"><code class="language-html">&lt;div class="ui button"&gt;
-  Follow
+              <pre class="prettyprint linenums"><code class="language-html">&lt;div class="ui facebook button"&gt;
+  &lt;i class="facebook icon"&gt;
+  Facebook
+&lt;/div&gt;
+&lt;div class="ui twitter button"&gt;
+  &lt;i class="twitter icon"&gt;
+  Twitter
 &lt;/div&gt;
               </code></pre>
             </div>
@@ -401,8 +405,102 @@
               <h4 class="ui header">Demostración</h4>
               <div>
                 <!-- aquí va como se muestra el código -->
-                <div class="ui button">
-                  Follow
+                <div class="ui facebook button">
+                  <i class="facebook icon"></i>
+                     Facebook
+                </div>
+                <div class="ui twitter button">
+                   <i class="twitter icon"></i>
+                     Twitter
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /demo.ui.segment -->
+
+
+        <div class="demo ui segment">
+          <h3 class="ui dividing header"></i>Comment</h3>
+          <div class="ui two column grid">
+            <div class="codigo column">
+              <h4 class="ui header">Código</h4>
+              <!-- Aquí va el código
+              "&lt;" == "<"
+              "&gt;" == ">"
+              -->
+              <pre class="prettyprint linenums"><code class="language-html">&lt;div class="ui comments"&gt;
+&lt;div class="comment"&gt;
+  &lt;a class="avatar"&gt;
+    &lt;img src="/images/avatar.jpg"&gt;
+  &lt;div class="content"&gt;
+    &lt;a class="author">Dog Doggington&gt; &lt;/a&gt;
+    &lt;div class="metadata"&gt;
+      &lt;div class="date"&gt;2 days ago&lt;/div&gt;
+      &lt;div class="stars"&gt;
+         &lt;i class="icon star"&gt;&lt;/i&gt;
+         &lt;i class="icon star"&gt;&lt;/i&gt;
+         &lt;i class="icon star"&gt;&lt;/i&gt;
+         &lt;i class="icon empty star"&gt;&lt;/i&gt;
+         &lt;i class="iicon empty star"&gt;&lt;/i&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="text"&gt;
+        I think this is a great idea and i am voting on it
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+
+            <div class="muestra column">
+              <h4 class="ui header">Demostración</h4>
+              <div class="column">
+                <!-- aquí va como se muestra el código -->
+                <div class="ui piled blue segment">
+                  <div class="ui comments">
+                    <div class="comment">
+                      <a class="avatar">
+                        <img src="vendor/semantic/server/files/images/demo/avatar.jpg">
+                      </a>
+                      <div class="content">
+                        <a class="author">Dog Doggington</a>
+                        <div class="metadata">
+                        <div class="date">2 days ago</div>
+                        <div class="stars">
+                          <i class="icon star"></i>
+                          <i class="icon star"></i>
+                          <i class="icon star"></i>
+                          <i class="icon empty star"></i>
+                          <i class="icon empty star"></i>
+                        </div>
+                        </div>
+                        <div class="text">
+                        I think this is a great idea and i am voting on it
+                        </div>
+                      </div>
+                    </div>
+                    <div class="comment">
+                      <a class="avatar">
+                        <img src="vendor/semantic/server/files/images/demo/avatar2.jpg">
+                      </a>
+                      <div class="content">
+                        <a class="author">Pawfin dog</a>
+                        <div class="metadata">
+                        <div class="date">2 days ago</div>
+                        <div class="stars">
+                          <i class="icon star"></i>
+                          <i class="icon star"></i>
+                          <i class="icon star"></i>
+                          <i class="icon empty star"></i>
+                          <i class="icon empty star"></i>
+                        </div>
+                        </div>
+                        <div class="text">
+                        I think this is a great idea and i am voting on it
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -510,6 +608,7 @@
             </div>
           </div>
         </div> <!-- /demo.ui.segment -->
+
 
         <div class="demo ui segment">
           <h3 class="ui dividing header"></i>Dropdown</h3>
