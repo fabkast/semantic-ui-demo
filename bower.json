@@ -1,0 +1,8 @@
+{
+	"name": "Demo Semantic UI",
+	"version": "'0.1.0",
+
+	"dependencies": {
+		"semantic": "~0.12"
+	}
+}
