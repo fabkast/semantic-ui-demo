@@ -11,8 +11,8 @@
 
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700' rel='stylesheet' type='text/css'>
   <link href="vendor/semantic/build/packaged/css/semantic.css" rel="stylesheet" type="text/css">
-  <!--link href="vendor/google-prettify/prettify.css" rel="stylesheet" type="text/css" /-->
-  <link href="vendor/google-prettify/monokai.css" rel="stylesheet" type="text/css" />
+  <link href="vendor/google-prettify/prettify.css" rel="stylesheet" type="text/css" />
+  <link href="vendor/google-prettify/desert.css" rel="stylesheet" type="text/css" />
 
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/semantic/build/packaged/javascript/semantic.js"></script>
@@ -43,22 +43,6 @@
       color: #FFF;
       background-color: #E54B4B;
     }
-
-    #definitions {
-      color: #FFF;
-      background-color: #16528E;
-    }
-
-    #definitions a.label {
-      margin: 0.4em;
-      padding-left: 0.3em;
-      padding-right:  0.3em;
-      text-transform: none;
-    }
-
-    /*#definitions a {
-      color: #FFF;
-    }*/
 
     section {
       padding-top: 3em;
@@ -247,136 +231,6 @@
 
   </section>
 
-  <section id="definitions">
-    <div class="ui page grid">
-      <div class="row">
-        <div class="column">
-          <h2 class="ui header"><i class="code icon"></i>Definitions</h2>
-          <blockquote>
-            <p>Las definiciones (definitions) en Semantic proveen de un formato reusable para compartir un diseño de interfaz.</p>
-            <p>Se tratan de grupos de css, fuentes, imágenes y javascript que conforman un sólo elemento.</p>
-          </blockquote>
-        </div>
-      </div>
-      <h3 class="ui header">Tipos de definiciones</h3>
-      <div class="two column row">
-        <div class="column">
-          <p class="ui large header">UI Elements</p>
-          <p>Bloques básicos. Existen por sí solos o en grupos homogéneos.</p>
-        </div>
-        <div class="column">
-          <div class="ui horizontal list">
-            <a class="ui green label item" href="http://semantic-ui.com/elements/button.html">Button</a>
-                
-            <a class="ui green label item" href="http://semantic-ui.com/elements/divider.html">Divider</a>
-          
-            <a class="ui green label item" href="http://semantic-ui.com/elements/header.html">Header</a>
-          
-            <a class="ui green label item" href="http://semantic-ui.com/elements/icon.html">Icon</a>
-          
-            <a class="ui green label item" href="http://semantic-ui.com/elements/image.html">Image</a>
-          
-            <a class="ui green label item" href="http://semantic-ui.com/elements/input.html">Input</a>
-          
-            <a class="ui green label item" href="http://semantic-ui.com/elements/label.html">Label</a>
-          
-            <a class="ui green label item" href="http://semantic-ui.com/elements/loader.html">Loader</a>
-          
-            <a class="ui green label item" href="http://semantic-ui.com/elements/progress.html">Progress</a>
-          
-            <a class="ui green label item" href="http://semantic-ui.com/modules/reveal.html">Reveal</a>
-          
-            <a class="ui green label item" href="http://semantic-ui.com/elements/segment.html">Segment</a>
-          
-            <a class="ui green label item" href="http://semantic-ui.com/elements/step.html">Step</a>
-          </div>
-        </div>
-      </div>
-      <div class="ui divider"></div>
-      <div class="two column row">
-        <div class="column">
-          <p class="ui large header">UI Collections</p>
-          <p>Grupo heterogéneo de varios componentes que usualmente pueden ser encontrados juntos.</p>
-        </div>
-        <div class="column">
-          <div class="ui horizontal list">
-            <a class="ui orange label item" href="http://semantic-ui.com/collections/breadcrumb.html">Breadcrumb</a>
-            
-            <a class="ui orange label item" href="http://semantic-ui.com/collections/form.html">Form</a>
-          
-            <a class="ui orange label item" href="http://semantic-ui.com/collections/grid.html">Grid</a>
-          
-            <a class="ui orange label item" href="http://semantic-ui.com/collections/menu.html">Menu</a>
-          
-            <a class="ui orange label item" href="http://semantic-ui.com/collections/message.html">Message</a>
-          
-            <a class="ui orange label item" href="http://semantic-ui.com/collections/table.html">Table</a>
-          </div>
-        </div>
-      </div>
-      <div class="ui divider"></div>
-      <div class="two column row">
-        <div class="column">
-          <p class="ui large header">UI Views</p>
-          <p>Una manera de presentar contenido común.</p>
-        </div>
-        <div class="column">
-          <div class="ui horizontal list">
-              <a class="ui green label item" href="http://semantic-ui.com/views/comment.html">Comment</a>
-            
-              <a class="ui green label item" href="http://semantic-ui.com/views/feed.html">Feed</a>
-            
-              <a class="ui green label item" href="http://semantic-ui.com/views/item.html">Item</a>
-            
-              <a class="ui green label item" href="http://semantic-ui.com/views/list.html">List</a>
-          </div>
-        </div>
-      </div>
-      <div class="ui divider"></div>
-      <div class="two column row">
-        <div class="column">
-          <p class="ui large header">UI Modules</p>
-          <p>Elementos que se definen esencialmente por su comportamiento.</p>
-        </div>
-        <div class="column">
-          <div class="ui horizontal list">
-              <a class="ui orange label item" href="http://semantic-ui.com/modules/accordion.html">Accordion</a>
-            
-              <a class="ui orange label item" href="http://semantic-ui.com/modules/checkbox.html">Checkbox</a>
-            
-              <a class="ui orange label item" href="http://semantic-ui.com/modules/dimmer.html">Dimmer</a>
-            
-              <a class="ui orange label item" href="http://semantic-ui.com/modules/dropdown.html">Dropdown</a>
-            
-              <a class="ui orange label item" href="http://semantic-ui.com/modules/modal.html">Modal</a>
-            
-              <a class="ui orange label item" href="http://semantic-ui.com/modules/popup.html">Popup</a>
-            
-              <a class="ui orange label item" href="http://semantic-ui.com/modules/rating.html">Rating</a>
-            
-              <a class="ui orange label item" href="http://semantic-ui.com/modules/shape.html">Shape</a>
-            
-              <a class="ui orange label item" href="http://semantic-ui.com/modules/sidebar.html">Sidebar</a>
-            
-              <a class="ui orange label item" href="http://semantic-ui.com/modules/transition.html">Transition</a>
-          </div>
-        </div>
-      </div>
-      <div class="ui divider"></div>
-      <div class="two column row">
-        <div class="column">
-          <p class="ui large header">UI Behaviors</p>
-          <p>Elementos que se definen esencialmente por su comportamiento.</p>
-        </div>
-        <div class="column">
-          <div class="ui horizontal list">
-              <a class="ui green label item" href="http://semantic-ui.com/modules/form.html">Form Validation</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section id="demostracion-componentes">
     <div class="ui page grid">
       <div class="column">
@@ -392,9 +246,10 @@
               "&lt;" == "<"
               "&gt;" == ">"
               -->
-              <pre class="prettyprint linenums"><code class="language-html">&lt;div class="ui button"&gt;
-  Follow
-&lt;/div&gt;
+              <pre class="prettyprint"><code class="language-html">
+  &lt;div class="ui button"&gt;
+    Follow
+  &lt;/div&gt;
               </code></pre>
             </div>
 
@@ -411,21 +266,28 @@
             ej. una variación del botón-->
           </div>
         </div> <!-- /demo.ui.segment -->
-
+		
+		<!-- Estructura de cada ejemplo, repetir por cada ejemplo -->
         <div class="demo ui segment">
           <h3 class="ui dividing header"></i>Horizontal Divider</h3>
           <div class="two column stackable ui grid">
             <div class="codigo column">
               <h4 class="ui header">Código</h4>
-              <pre class="prettyprint linenums"><code class="language-html">&lt;div class="ui tertiary form segment"&gt;
-  &lt;div class="field"&gt;
-  &lt;label&gt;Lookup Order &lt;/label&gt;
-  &lt;div class="ui left labeled icon input"&gt;
-    &lt;i class="search icon"&gt;&lt;/i&gt;
-    &lt;input type="text" placeholder="Order #"&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="ui blue submit button"&gt;Search&lt;/div&gt;
+              <!-- Aquí va el código
+              "&lt;" == "<"
+			  
+              "&gt;" == ">"
+              -->
+              <pre class="prettyprint"><code class="language-html">
+  &lt;div class="ui tertiary form segment"&gt;
+   &lt;div class="field"&gt;
+	&lt;label&gt;Lookup Order &lt;/label&gt;
+	&lt;div class="ui left labeled icon input"&gt;
+	&lt;i class="search icon"&gt;&lt;/i&gt;
+	&lt;input type="text" placeholder="Order #"&gt;
+   &lt;/div&gt;
+   &lt;/div&gt;
+  &lt;div class="ui blue submit button"&gt;Search&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class="ui horizontal divider"&gt;
   Or
@@ -433,87 +295,103 @@
 &lt;div class="ui teal labeled icon button"&gt;
   Create New Order
   &lt;i class="add icon"&gt;&lt;/i&gt;
-&lt;/div&gt;
-              </code></pre>
-            </div>
-
-            <div class="muestra column">
-              <h4 class="ui header">Demostración</h4>
-                <h3 class="ui header">Retrieve Order</h3>
-                <div class="ui tertiary form segment">
-                  <div class="field">
-                    <label>Lookup Order</label>
-                    <div class="ui left labeled icon input">
-                      <i class="search icon"></i>
-                      <input type="text" placeholder="Order #">
-                    </div>
-                  </div>
-                  <div class="ui blue submit button">Search</div>
-                </div>
-                <div class="ui horizontal divider">
-                  Or
-                </div>
-                <div class="ui teal labeled icon button">
-                  Create New Order
-                  <i class="add icon"></i>
-                </div>
-            </div>
-          </div>
-        </div> <!-- /demo.ui.segment -->
-
-        <div class="demo ui segment">
-          <h3 class="ui dividing header"></i>Collection- Types -Menu</h3>
-          <div class="two column stackable ui grid">
-            <div class="codigo column">
-              <h4 class="ui header">Código</h4>
-              <pre class="prettyprint linenums"><code class="language-html">&lt;div class="ui tertiary form segment"&gt;
-  &lt;div class="ui menu"&gt;
-    &lt;a class="active item"&gt;
-      &lt;i class="home icon"&gt;&lt;/i&gt; Home
-    &lt;/a&gt;
-    &lt;a class="item"&gt;
-      &lt;i class="mail icon"&gt;&lt;/i&gt; Messages
-    &lt;/a&gt;
-    &lt;div class="right menu"&gt;
-      &lt;div class="item"&gt;
-        &lt;div class="ui icon input"&gt;
-          &lt;input type="text" placeholder="Search..."&gt;
-          &lt;i class="search link icon"&gt;&lt;/i&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
+</div>
               </code></pre>
             </div>
 
             <div class="muestra column">
               <h4 class="ui header">Demostración</h4>
               <div>
+                <!-- aquí va como se muestra el código -->
                 <h3 class="ui header">Retrieve Order</h3>
-                <div class="ui menu">
-                  <a class="active item">
-                    <i class="home icon"></i> Home
-                  </a>
-                  <a class="item">
-                    <i class="mail icon"></i> Messages
-                  </a>
-                  <div class="right menu">
-                    <div class="item">
-                      <div class="ui icon input">
-                        <input type="text" placeholder="Search...">
-                        <i class="search link icon"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+<div class="ui tertiary form segment">
+  <div class="field">
+    <label>Lookup Order</label>
+    <div class="ui left labeled icon input">
+      <i class="search icon"></i>
+      <input type="text" placeholder="Order #">
+    </div>
+  </div>
+  <div class="ui blue submit button">Search</div>
+</div>
+<div class="ui horizontal divider">
+  Or
+</div>
+<div class="ui teal labeled icon button">
+  Create New Order
+  <i class="add icon"></i>
+</div>
               </div>
             </div>
+            <!-- Se puede ir repitiendo esta estructura para mostrar más ejemplos del mismo componente
+            ej. una variación del botón-->
           </div>
         </div> <!-- /demo.ui.segment -->
+      </div>
+	  <!-- Estructura de cada ejemplo, repetir por cada ejemplo -->
+        <div class="demo ui segment">
+          <h3 class="ui dividing header"></i>Collection- Types -Menu</h3>
+          <div class="two column stackable ui grid">
+            <div class="codigo column">
+              <h4 class="ui header">Código</h4>
+              <!-- Aquí va el código
+              "&lt;" == "<"
+			  
+              "&gt;" == ">"
+              -->
+              <pre class="prettyprint"><code class="language-html">
+  &lt;div class="ui tertiary form segment"&gt;
+  &lt;div class="ui menu"&gt;
+  &lt;a class="active item"&gt;
+   &lt;i class="home icon"&gt;&lt;/i&gt; Home
+  &lt;/a&gt;
+  &lt;a class="item"&gt;
+    &lt;i class="mail icon"&gt;&lt;/i&gt; Messages
+  &lt;/a&gt;
+  &lt;div class="right menu"&gt;
+    &lt;div class="item"&gt;
+      &lt;div class="ui icon input"&gt;
+        &lt;input type="text" placeholder="Search..."&gt;
+        &lt;i class="search link icon"&gt;&lt;/i&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+   
+</div>
+              </code></pre>
+            </div>
 
+            <div class="muestra column">
+              <h4 class="ui header">Demostración</h4>
+              <div>
+                <!-- aquí va como se muestra el código -->
+                <h3 class="ui header">Retrieve Order</h3>
+
+  <div class="ui menu">
+  <a class="active item">
+    <i class="home icon"></i> Home
+  </a>
+  <a class="item">
+    <i class="mail icon"></i> Messages
+  </a>
+  <div class="right menu">
+    <div class="item">
+      <div class="ui icon input">
+        <input type="text" placeholder="Search...">
+        <i class="search link icon"></i>
       </div>
     </div>
+  </div>
+</div>
+              </div>
+            </div>
+            <!-- Se puede ir repitiendo esta estructura para mostrar más ejemplos del mismo componente
+            ej. una variación del botón-->
+          </div>
+        </div> <!-- /demo.ui.segment -->
+    </div>
+	
     
   </section>
 
@@ -525,17 +403,5 @@
 <script>
 $('.sidebar.principal').sidebar('show');
 prettyPrint();
-
-function makeSameHeight ($items) {
-  var heights = $items.map(function (){
-    return $(this).height();
-  }).get();
-  var maxHeight = Math.max.apply(null, heights);
-  $items.height(maxHeight);
-}
-
-var $items = $("#caracteristicas .item");
-makeSameHeight($items);
-
 </script>
 </html>
