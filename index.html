@@ -56,18 +56,17 @@
       text-transform: none;
     }
 
-    /*#definitions a {
-      color: #FFF;
-    }*/
+    #fin {
+      padding-top: 7rem;
+      padding-bottom: 15rem;
+      background-color: #efefef;
+    }
 
     section {
       padding-top: 3em;
       padding-bottom: 3em;
     }
 
-    /*.menu.principal {
-      margin-bottom: 0;
-    }*/
   </style>
 
 </head>
@@ -512,18 +511,273 @@
           </div>
         </div> <!-- /demo.ui.segment -->
 
+        <div class="demo ui segment">
+          <h3 class="ui dividing header"></i>Dropdown</h3>
+          <div class="two column stackable ui grid">
+            <div class="codigo column">
+              <h4 class="ui header">Código</h4>
+              <!-- Aquí va el código -->
+              <pre class="prettyprint linenums"><code class="language-html">&lt;!-- HTML --&gt;
+&lt;div class="ui dropdown"&gt;
+  &lt;div class="text"&gt;Select&lt;/div&gt;
+  &lt;i class="dropdown icon"&gt;&lt;/i&gt;
+  &lt;div class="menu"&gt;
+    &lt;div class="item" data-value="option1"&gt;Option 1&lt;/div&gt;
+    &lt;div class="item" data-value="option2"&gt;Option 2&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!--  javascript --&gt;
+&lt;script&gt;
+$('.ui.dropdown')
+  .dropdown()
+;
+&lt;/script&gt;
+</code></pre>
+            </div>
+
+            <div class="muestra column">
+              <h4 class="ui header">Demostración</h4>
+              <div>
+                <!-- aquí va como se muestra el código -->
+                <div class="ui dropdown">
+                  <div class="text">Select</div>
+                  <i class="dropdown icon"></i>
+                  <div class="menu">
+                    <div class="item" data-value="option1">Option 1</div>
+                    <div class="item" data-value="option2">Option 2</div>
+                  </div>
+                </div>
+              </div>
+              <script>$('.ui.dropdown').dropdown();</script>
+            </div>
+          </div>
+        </div> <!-- /demo.ui.segment -->
+
+        <div class="demo ui segment">
+          <h3 class="ui dividing header"></i>Form validation</h3>
+          <div class="two column stackable ui grid">
+            <div class="codigo column">
+              <h4 class="ui header">Código</h4>
+              <!-- Aquí va el código
+              "&lt;" == "<"
+              "&gt;" == ">"
+              -->
+              <pre class="prettyprint linenums"><code class="language-html">&lt;!-- HTML --&gt;
+&lt;form class="ui form segment" style="display: block;"&gt;
+  &lt;p&gt;Let's go ahead and get you signed up.&lt;/p&gt;
+  &lt;div class="two fields"&gt;
+    &lt;div class="field"&gt;
+      &lt;label&gt;First Name&lt;/label&gt;
+      &lt;input placeholder="First Name"
+          name="first-name" type="text"&gt;
+    &lt;/div&gt;
+    &lt;div class="field"&gt;
+      &lt;label&gt;Last Name&lt;/label&gt;
+      &lt;input placeholder="Last Name"
+          name="last-name" type="text"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="field"&gt;
+    &lt;label&gt;Username&lt;/label&gt;
+    &lt;input placeholder="Username"
+        name="username" type="text"&gt;
+  &lt;/div&gt;
+  &lt;div class="field"&gt;
+    &lt;label&gt;Password&lt;/label&gt;
+    &lt;input type="password" name="password"&gt;
+  &lt;/div&gt;
+  &lt;div class="inline field"&gt;
+    &lt;div class="ui checkbox"&gt;
+      &lt;input type="checkbox" name="terms"&gt;
+      &lt;label&gt;I agree to the terms and conditions&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button class="ui blue submit button" type="submit" &gt;Submit&lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/form&gt;
+
+&lt;!-- Javascript --&gt;
+&lt;script&gt;
+$('.ui.form')
+.form({
+  firstName: {
+    identifier  : 'first-name',
+    rules: [
+      {
+        type   : 'empty',
+        prompt : 'Please enter your first name'
+      }
+    ]
+  },
+  lastName: {
+    identifier  : 'last-name',
+    rules: [
+      {
+        type   : 'empty',
+        prompt : 'Please enter your last name'
+      }
+    ]
+  },
+  username: {
+    identifier : 'username',
+    rules: [
+      {
+        type   : 'empty',
+        prompt : 'Please enter a username'
+      }
+    ]
+  },
+  password: {
+    identifier : 'password',
+    rules: [
+      {
+        type   : 'empty',
+        prompt : 'Please enter a password'
+      },
+      {
+        type   : 'length[6]',
+        prompt :
+            'Your password must be at least 6 characters'
+      }
+    ]
+  },
+  terms: {
+    identifier : 'terms',
+    rules: [
+      {
+        type   : 'checked',
+        prompt :
+          'You must agree to the terms and conditions'
+      }
+    ]
+  }
+  },
+  { inline: true }
+);
+&lt;/script&gt;
+              </code></pre>
+            </div>
+
+            <div class="muestra column">
+              <h4 class="ui header">Demostración</h4>
+              <div>
+                <form class="ui form segment" style="display: block;">
+                  <p>Let's go ahead and get you signed up.</p>
+                  <div class="two fields">
+                    <div class="field">
+                      <label>First Name</label>
+                      <input placeholder="First Name" name="first-name" type="text">
+                    </div>
+                    <div class="field">
+                      <label>Last Name</label>
+                      <input placeholder="Last Name" name="last-name" type="text">
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label>Username</label>
+                    <input placeholder="Username" name="username" type="text">
+                  </div>
+                  <div class="field">
+                    <label>Password</label>
+                    <input type="password" name="password">
+                  </div>
+                  <div class="inline field">
+                    <div class="ui checkbox">
+                      <input type="checkbox" name="terms">
+                      <label>I agree to the terms and conditions</label>
+                    </div>
+                  </div>
+                  <div class="ui blue submit button">Submit</div>
+                </div>
+              </div>
+            </form>
+            <script>
+            $('.ui.form')
+              .form({
+                firstName: {
+                  identifier  : 'first-name',
+                  rules: [
+                    {
+                      type   : 'empty',
+                      prompt : 'Please enter your first name'
+                    }
+                  ]
+                },
+                lastName: {
+                  identifier  : 'last-name',
+                  rules: [
+                    {
+                      type   : 'empty',
+                      prompt : 'Please enter your last name'
+                    }
+                  ]
+                },
+                username: {
+                  identifier : 'username',
+                  rules: [
+                    {
+                      type   : 'empty',
+                      prompt : 'Please enter a username'
+                    }
+                  ]
+                },
+                password: {
+                  identifier : 'password',
+                  rules: [
+                    {
+                      type   : 'empty',
+                      prompt : 'Please enter a password'
+                    },
+                    {
+                      type   : 'length[6]',
+                      prompt : 'Your password must be at least 6 characters'
+                    }
+                  ]
+                },
+                terms: {
+                  identifier : 'terms',
+                  rules: [
+                    {
+                      type   : 'checked',
+                      prompt : 'You must agree to the terms and conditions'
+                    }
+                  ]
+                }
+              },
+              {inline: true})
+            ;
+
+            $('.ui.checkbox').checkbox();
+            </script>
+          </div>
+        </div> <!-- /demo.ui.segment -->
+
       </div>
     </div>
     
   </section>
 
   <section id="fin">
-    
+    <div class="ui page grid">
+      <div class="column">
+        <div class="ui huge center aligned icon header">
+          <i class="circular heart icon gracias"></i>Gracias
+          <div class="sub header"></div>
+        </div>
+      </div>
+    </div>
   </section>
   
 </body>
 <script>
 $('.sidebar.principal').sidebar('show');
+
+$('.icon.gracias')
+  .transition('set looping')
+  .transition('pulse', '1800ms');
+
 prettyPrint();
 
 function makeSameHeight ($items) {
