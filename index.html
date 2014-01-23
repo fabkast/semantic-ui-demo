@@ -10,11 +10,13 @@
   <title>Semantic Demo</title>
 
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700' rel='stylesheet' type='text/css'>
-
-  <link rel="stylesheet" type="text/css" href="vendor/semantic/build/packaged/css/semantic.css">
+  <link href="vendor/semantic/build/packaged/css/semantic.css" rel="stylesheet" type="text/css">
+  <link href="vendor/google-prettify/prettify.css" rel="stylesheet" type="text/css" />
+  <link href="vendor/google-prettify/desert.css" rel="stylesheet" type="text/css" />
 
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/semantic/build/packaged/javascript/semantic.js"></script>
+  <script src="vendor/google-prettify/prettify.js"></script>
 
   <style>
 
@@ -45,11 +47,17 @@
 </head>
 <body>
   <header class="ui inverted pointing top sidebar menu principal">
-    <a class="active item">
+    <a class="active item" href="#inicio">
       <i class="home icon"></i> Inicio
     </a>
-    <a class="item">
-      <i class="mail icon"></i> Messages
+    <a class="item" href="#caracteristicas">
+      <i class="list icon"></i> Características
+    </a>
+    <a class="item" href="#demostracion-componentes">
+      <i class="code icon"></i> Ejemplos
+    </a>
+    <a class="item" href="#fin">
+      <i class="thumbs up icon"></i>Gracias
     </a>
   </header>
 
@@ -94,6 +102,44 @@
   </section>
 
   <section id="demostracion-componentes">
+    <div class="ui page grid">
+      <div class="column">
+        <h2 class="ui header"><i class="code icon"></i>Demostración de componentes</h2>
+
+        <!-- Estructura de cada ejemplo, repetir por cada ejemplo -->
+        <div class="demo ui segment">
+          <h3 class="ui dividing header"></i>Button</h3>
+          <div class="ui two column grid">
+            <div class="codigo column">
+              <h4 class="ui header">Código</h4>
+              <!-- Aquí va el código
+              "&lt;" == "<"
+              "&gt;" == ">"
+              -->
+              <pre class="prettyprint"><code class="language-html">
+  &lt;div class="ui button"&gt;
+    Follow
+  &lt;/div&gt;
+              </code></pre>
+            </div>
+
+            <div class="muestra column">
+              <h4 class="ui header">Demostración</h4>
+              <div>
+                <!-- aquí va como se muestra el código -->
+                <div class="ui button">
+                  Follow
+                </div>
+              </div>
+            </div>
+            <!-- Se puede ir repitiendo esta estructura para mostrar más ejemplos del mismo componente
+            ej. una variación del botón-->
+          </div>
+        </div> <!-- /demo.ui.segment -->
+
+
+      </div>
+    </div>
     
   </section>
 
@@ -103,8 +149,7 @@
   
 </body>
 <script>
-$('.sidebar.principal')
-  .sidebar('show')
-;
+$('.sidebar.principal').sidebar('show');
+prettyPrint();
 </script>
 </html>
