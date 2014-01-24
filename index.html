@@ -17,6 +17,8 @@
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/semantic/build/packaged/javascript/semantic.js"></script>
   <script src="vendor/google-prettify/prettify.js"></script>
+  <script src="vendor/jquery-one-page-nav/jquery.scrollTo.js"></script>
+  <script src="vendor/jquery-one-page-nav/jquery.nav.js"></script>
 
   <style>
 
@@ -37,6 +39,14 @@
 
     .menu.principal {
       overflow: hidden;
+    }
+
+    .menu.principal a {
+      text-decoration: none;
+    }
+
+    .menu.principal li:hover {
+      background-color: rgba(255, 255, 255, 0.1);
     }
 
     #caracteristicas {
@@ -71,19 +81,34 @@
 
 </head>
 <body>
-  <header class="ui inverted pointing top sidebar menu principal">
-    <a class="active item" href="#inicio">
-      <i class="home icon"></i> Inicio
-    </a>
-    <a class="item" href="#caracteristicas">
-      <i class="list icon"></i> Características
-    </a>
-    <a class="item" href="#demostracion-componentes">
-      <i class="code icon"></i> Ejemplos
-    </a>
-    <a class="item" href="#fin">
-      <i class="thumbs up icon"></i>Gracias
-    </a>
+  <header id="menu" class="ui inverted pointing top sidebar menu principal">
+    <ul>
+      <li class="item">
+        <a href="#inicio">
+          <i class="home icon"></i> Inicio
+        </a>
+      </li>
+      <li class="item">
+        <a href="#caracteristicas">
+          <i class="list icon"></i> Características
+        </a>
+      </li>
+      <li class="item">
+        <a href="#definitions">
+            <i class="info letter icon"></i> Definitions
+        </a>
+      </li>
+      <li class="item">
+        <a href="#demostracion-componentes">
+          <i class="code icon"></i> Ejemplos
+        </a>
+      </li>
+      <li class="item">
+        <a href="#fin">
+          <i class="heart icon"></i>Fin
+        </a>
+      </li>
+    </ul>
   </header>
 
   <section id="inicio" class="main segment">
@@ -889,6 +914,16 @@ function makeSameHeight ($items) {
 
 var $items = $("#caracteristicas .item");
 makeSameHeight($items);
+
+$('#menu').onePageNav({
+    currentClass: 'active',
+    changeHash: false,
+    scrollSpeed: 750,
+    scrollOffset: 30,
+    scrollThreshold: 0.5,
+    filter: '',
+    easing: 'swing'
+});
 
 </script>
 </html>
